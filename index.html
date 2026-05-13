@@ -3,192 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Los Iconos de la Bachata — Marketing Hub</title>
+<title>Los Iconos de la Bachata - Marketing Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --orange: #FF6200;
-  --black: #0A0A0A;
-  --white: #F5F0EB;
-  --gray: #1A1A1A;
-  --muted: #888;
-  --border: rgba(255,255,255,0.08);
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--black); color: var(--white); font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; line-height: 1.6; }
-a { color: inherit; text-decoration: none; }
-
-/* NAV */
-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 2rem; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(10,10,10,0.95); backdrop-filter: blur(8px); z-index: 100; }
-.nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: var(--orange); }
-.nav-links { display: flex; gap: 2rem; font-size: 12px; font-family: 'IBM Plex Mono', monospace; color: var(--muted); }
-.nav-links a:hover { color: var(--white); }
-.nav-badge { background: var(--orange); color: #fff; font-size: 10px; padding: 3px 8px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 1px; }
-
-/* HERO */
-.hero { padding: 5rem 2rem 4rem; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1200px; margin: 0 auto; }
-.hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--orange); letter-spacing: 2px; margin-bottom: 1rem; text-transform: uppercase; }
-.hero-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 7vw, 80px); line-height: 0.95; letter-spacing: 1px; margin-bottom: 1.5rem; }
-.hero-title span { color: var(--orange); }
-.hero-desc { color: var(--muted); font-size: 15px; line-height: 1.7; max-width: 420px; margin-bottom: 2rem; }
-.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-primary { background: var(--orange); color: #fff; padding: 10px 20px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border: none; cursor: pointer; display: inline-block; }
-.btn-secondary { border: 1px solid var(--border); color: var(--muted); padding: 10px 20px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; display: inline-block; }
-.btn-secondary:hover { border-color: var(--orange); color: var(--white); }
-.hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
-.stat-box { background: var(--gray); padding: 1.5rem; }
-.stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 42px; color: var(--orange); line-height: 1; }
-.stat-label { font-size: 11px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
-
-/* SECTIONS */
-.section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; border-bottom: 1px solid var(--border); }
-.section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 2rem; }
-.section-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 1px; }
-.section-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--orange); }
-
-/* CAMPAIGNS */
-.campaign-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: var(--border); }
-.campaign-card { background: var(--gray); padding: 1.5rem; transition: background 0.2s; }
-.campaign-card:hover { background: #222; }
-.campaign-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--orange); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.75rem; }
-.campaign-name { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.5px; margin-bottom: 0.5rem; line-height: 1.1; }
-.campaign-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
-.campaign-meta { display: flex; gap: 12px; flex-wrap: wrap; }
-.meta-tag { font-size: 10px; font-family: 'IBM Plex Mono', monospace; border: 1px solid var(--border); color: var(--muted); padding: 3px 8px; }
-.status-active { color: #1D9E75; border-color: rgba(29,158,117,0.3); }
-.status-planned { color: #EF9F27; border-color: rgba(239,159,39,0.3); }
-
-/* PLATFORMS */
-.platform-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--border); }
-.plat-box { background: var(--gray); padding: 1.25rem 1rem; text-align: center; transition: background 0.2s; }
-.plat-box:hover { background: #222; }
-.plat-dot { width: 10px; height: 10px; border-radius: 50%; margin: 0 auto 0.75rem; }
-.plat-name { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--white); margin-bottom: 4px; }
-.plat-count { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--orange); }
-.plat-label { font-size: 10px; color: var(--muted); }
-
-/* CALENDAR */
-.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--border); }
-.cal-header { background: #111; padding: 8px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
-.cal-day { background: var(--gray); padding: 8px; min-height: 72px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; transition: background 0.15s; cursor: pointer; }
-.cal-day:hover { background: #222; }
-.cal-day.empty { background: #0d0d0d; }
-.cal-day.has-post { border-top: 2px solid var(--orange); }
-.cal-date { font-size: 13px; font-weight: 500; margin-bottom: 4px; color: var(--white); }
-.cal-post { font-size: 9px; color: var(--muted); line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-.cal-plat-dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
-
-/* STRATEGY */
-.strategy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); }
-.strategy-card { background: var(--gray); padding: 1.5rem; }
-.strategy-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--orange); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.75rem; }
-.strategy-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; margin-bottom: 0.5rem; }
-.strategy-body { font-size: 13px; color: var(--muted); line-height: 1.7; }
-.hashtag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.75rem; }
-.hashtag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--orange); border: 1px solid rgba(255,98,0,0.25); padding: 3px 8px; }
-
-/* KPI */
-.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); margin-bottom: 1px; }
-.kpi-box { background: var(--gray); padding: 1.25rem; }
-.kpi-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.kpi-val { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--white); line-height: 1; }
-.kpi-target { font-size: 11px; color: var(--orange); margin-top: 4px; font-family: 'IBM Plex Mono', monospace; }
-
-/* FOOTER */
-footer { padding: 2rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--muted); }
-.footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 16px; color: var(--orange); letter-spacing: 2px; }
-
-/* ANIMATIONS */
-@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-.fade-up { animation: fadeUp 0.6s ease forwards; opacity: 0; }
-.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
-
-@media(max-width:768px) {
-  .hero { grid-template-columns: 1fr; }
-  .platform-grid { grid-template-columns: repeat(3,1fr); }
-  .kpi-grid { grid-template-columns: repeat(2,1fr); }
-  .strategy-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-}
+:root{--orange:#FF6200;--black:#0A0A0A;--white:#F5F0EB;--gray:#1A1A1A;--muted:#888;--border:rgba(255,255,255,0.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--black);color:var(--white);font-family:'IBM Plex Sans',sans-serif;font-size:14px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 2rem;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.95);backdrop-filter:blur(8px);z-index:100}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;color:var(--orange)}
+.nav-links{display:flex;gap:2rem;font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--muted)}
+.nav-links a:hover{color:var(--white)}
+.nav-badge{background:var(--orange);color:#fff;font-size:10px;padding:3px 8px;border-radius:2px;font-family:'IBM Plex Mono',monospace;letter-spacing:1px}
+.hero{padding:5rem 2rem 4rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:1200px;margin:0 auto}
+.hero-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--orange);letter-spacing:2px;margin-bottom:1rem;text-transform:uppercase}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,80px);line-height:0.95;letter-spacing:1px;margin-bottom:1.5rem}
+.hero-title span{color:var(--orange)}
+.hero-desc{color:var(--muted);font-size:15px;line-height:1.7;max-width:420px;margin-bottom:2rem}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--orange);color:#fff;padding:10px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1px;border:none;cursor:pointer;display:inline-block}
+.btn-secondary{border:1px solid var(--border);color:var(--muted);padding:10px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1px;display:inline-block}
+.btn-secondary:hover{border-color:var(--orange);color:var(--white)}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border)}
+.stat-box{background:var(--gray);padding:1.5rem}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:42px;color:var(--orange);line-height:1}
+.stat-label{font-size:11px;color:var(--muted);font-family:'IBM Plex Mono',monospace;margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+.section{padding:4rem 2rem;max-width:1200px;margin:0 auto;border-bottom:1px solid var(--border)}
+.section-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px}
+.section-link{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--orange)}
+.campaign-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--border)}
+.campaign-card{background:var(--gray);padding:1.5rem;transition:background 0.2s}
+.campaign-card:hover{background:#222}
+.campaign-tag{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--orange);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.75rem}
+.campaign-name{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:0.5px;margin-bottom:0.5rem;line-height:1.1}
+.campaign-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:1rem}
+.campaign-meta{display:flex;gap:12px;flex-wrap:wrap}
+.meta-tag{font-size:10px;font-family:'IBM Plex Mono',monospace;border:1px solid var(--border);color:var(--muted);padding:3px 8px}
+.status-active{color:#1D9E75;border-color:rgba(29,158,117,0.3)}
+.status-planned{color:#EF9F27;border-color:rgba(239,159,39,0.3)}
+.platform-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border)}
+.plat-box{background:var(--gray);padding:1.25rem 1rem;text-align:center;transition:background 0.2s}
+.plat-box:hover{background:#222}
+.plat-dot{width:10px;height:10px;border-radius:50%;margin:0 auto 0.75rem}
+.plat-name{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--white);margin-bottom:4px}
+.plat-count{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--orange)}
+.plat-label{font-size:10px;color:var(--muted)}
+.strategy-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.strategy-card{background:var(--gray);padding:1.5rem}
+.strategy-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--orange);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.75rem}
+.strategy-title{font-family:'Bebas Neue',sans-serif;font-size:22px;margin-bottom:0.5rem}
+.strategy-body{font-size:13px;color:var(--muted);line-height:1.7}
+.hashtag-cloud{display:flex;flex-wrap:wrap;gap:6px;margin-top:0.75rem}
+.hashtag{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--orange);border:1px solid rgba(255,98,0,0.25);padding:3px 8px}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.kpi-box{background:var(--gray);padding:1.25rem}
+.kpi-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.kpi-val{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--white);line-height:1}
+.kpi-target{font-size:11px;color:var(--orange);margin-top:4px;font-family:'IBM Plex Mono',monospace}
+footer{padding:2rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted)}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--orange);letter-spacing:2px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp 0.6s ease forwards;opacity:0}
+.delay-2{animation-delay:0.2s}
+@media(max-width:768px){.hero{grid-template-columns:1fr}.platform-grid{grid-template-columns:repeat(3,1fr)}.kpi-grid{grid-template-columns:repeat(2,1fr)}.strategy-grid{grid-template-columns:1fr}.nav-links{display:none}}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="nav-logo">Los Iconos</div>
   <div class="nav-links">
     <a href="#campaigns">Campaigns</a>
-    <a href="#calendar">Calendar</a>
+    <a href="#platforms">Platforms</a>
     <a href="#strategy">Strategy</a>
     <a href="#analytics">Analytics</a>
-    <a href="https://losiconosdelabachata.com" target="_blank">Store ↗</a>
+    <a href="https://losiconosdelabachata.com" target="_blank">Store</a>
   </div>
-  <div class="nav-badge">FEDGE 2.O</div>
+  <div class="nav-badge">Marino 007</div>
 </nav>
-
 <div style="max-width:1200px;margin:0 auto">
   <div class="hero">
     <div class="fade-up">
       <div class="hero-eyebrow">Marketing Command Center</div>
       <h1 class="hero-title">Los Iconos<br>de la <span>Bachata</span></h1>
-      <p class="hero-desc">Official social media strategy, campaigns, and content hub for Aventura and bachata culture. Built on FEDGE 2.O.</p>
+      <p class="hero-desc">Official social media strategy, campaigns, and content hub for Aventura and bachata culture. Managed by Marino 007.</p>
       <div class="hero-btns">
-        <a href="https://losiconosdelabachata.com" target="_blank" class="btn-primary">Visit Store ↗</a>
-        <a href="https://github.com/cryptofedge/losiconosdelabachata-marketing" target="_blank" class="btn-secondary">GitHub Repo ↗</a>
+        <a href="https://losiconosdelabachata.com" target="_blank" class="btn-primary">Visit Store</a>
       </div>
     </div>
     <div class="hero-stats fade-up delay-2">
       <div class="stat-box"><div class="stat-num">6</div><div class="stat-label">Active platforms</div></div>
-      <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Live campaigns</div></div>
-      <div class="stat-box"><div class="stat-num">60</div><div class="stat-label">Days of content</div></div>
-      <div class="stat-box"><div class="stat-num">∞</div><div class="stat-label">La cultura</div></div>
+      <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Live campaigns</div></div>
+      <div class="stat-box"><div class="stat-num">90</div><div class="stat-label">Days of content</div></div>
+      <div class="stat-box"><div class="stat-num">La</div><div class="stat-label">Cultura</div></div>
     </div>
   </div>
 </div>
-
 <div class="section" id="campaigns">
-  <div class="section-header">
-    <div class="section-title">Active Campaigns</div>
-    <a href="https://github.com/cryptofedge/losiconosdelabachata-marketing/tree/main/campaigns" target="_blank" class="section-link">View all on GitHub ↗</a>
-  </div>
+  <div class="section-header"><div class="section-title">Active Campaigns</div></div>
   <div class="campaign-grid">
     <div class="campaign-card">
-      <div class="campaign-tag">Campaign 001 — June 2026</div>
-      <div class="campaign-name">Summer Drop — La Cultura No Para</div>
+      <div class="campaign-tag">Campaign 001 - June 2026</div>
+      <div class="campaign-name">Summer Drop - La Cultura No Para</div>
       <div class="campaign-desc">48-hour flash drop across all 6 platforms. Full copy, Reel scripts, Stories sequence, and UTM links included.</div>
-      <div class="campaign-meta">
-        <span class="meta-tag status-active">Active</span>
-        <span class="meta-tag">All platforms</span>
-        <span class="meta-tag">Jun 26–27</span>
-      </div>
+      <div class="campaign-meta"><span class="meta-tag status-active">Active</span><span class="meta-tag">All platforms</span><span class="meta-tag">Jun 26-27</span></div>
     </div>
     <div class="campaign-card">
-      <div class="campaign-tag">Campaign 002 — July 2026</div>
+      <div class="campaign-tag">Campaign 002 - July 2026</div>
       <div class="campaign-name">Los Iconos de la Comunidad</div>
       <div class="campaign-desc">Weekly fan feature series. UGC-driven community campaign. Every week we crown a real Icono de la Bachata.</div>
-      <div class="campaign-meta">
-        <span class="meta-tag status-planned">Planned</span>
-        <span class="meta-tag">All platforms</span>
-        <span class="meta-tag">Jul ongoing</span>
-      </div>
+      <div class="campaign-meta"><span class="meta-tag status-planned">Planned</span><span class="meta-tag">All platforms</span><span class="meta-tag">Jul ongoing</span></div>
     </div>
     <div class="campaign-card">
-      <div class="campaign-tag">Campaign 003 — August 2026</div>
+      <div class="campaign-tag">Campaign 003 - August 2026</div>
       <div class="campaign-name">De Vuelta al Barrio</div>
-      <div class="campaign-desc">Back-to-school / late summer campaign targeting the diaspora. New collection drop tied to fall culture moments.</div>
-      <div class="campaign-meta">
-        <span class="meta-tag status-planned">In progress</span>
-        <span class="meta-tag">All platforms</span>
-        <span class="meta-tag">Aug 2026</span>
-      </div>
+      <div class="campaign-desc">Back-to-school / late summer campaign. New fall collection drop tied to diaspora culture moments.</div>
+      <div class="campaign-meta"><span class="meta-tag status-planned">In progress</span><span class="meta-tag">All platforms</span><span class="meta-tag">Aug 15</span></div>
     </div>
   </div>
 </div>
-
 <div class="section" id="platforms">
-  <div class="section-header">
-    <div class="section-title">Platform Coverage</div>
-  </div>
+  <div class="section-header"><div class="section-title">Platform Coverage</div></div>
   <div class="platform-grid">
     <div class="plat-box"><div class="plat-dot" style="background:#E1306C"></div><div class="plat-name">Instagram</div><div class="plat-count">5-6x</div><div class="plat-label">per week</div></div>
     <div class="plat-box"><div class="plat-dot" style="background:#888"></div><div class="plat-name">TikTok</div><div class="plat-count">7x</div><div class="plat-label">per week</div></div>
@@ -198,110 +133,46 @@ footer { padding: 2rem; border-top: 1px solid var(--border); display: flex; alig
     <div class="plat-box"><div class="plat-dot" style="background:#aaa"></div><div class="plat-name">Threads</div><div class="plat-count">3-4x</div><div class="plat-label">per week</div></div>
   </div>
 </div>
-
-<div class="section" id="calendar">
-  <div class="section-header">
-    <div class="section-title">June 2026 — Content Calendar</div>
-    <a href="https://github.com/cryptofedge/losiconosdelabachata-marketing/tree/main/calendar" target="_blank" class="section-link">Full calendars on GitHub ↗</a>
-  </div>
-  <div class="calendar-grid">
-    <div class="cal-header">Mon</div><div class="cal-header">Tue</div><div class="cal-header">Wed</div><div class="cal-header">Thu</div><div class="cal-header">Fri</div><div class="cal-header">Sat</div><div class="cal-header">Sun</div>
-    <div class="cal-day empty"></div>
-    <div class="cal-day empty"></div>
-    <div class="cal-day empty"></div>
-    <div class="cal-day empty"></div>
-    <div class="cal-day empty"></div>
-    <div class="cal-day empty"></div>
-    <div class="cal-day has-post"><div class="cal-date">1</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Brand launch Reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">2</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>POV TikTok</div></div>
-    <div class="cal-day has-post"><div class="cal-date">3</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Top 5 carousel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">4</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Merch reveal</div></div>
-    <div class="cal-day has-post"><div class="cal-date">5</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Merch styling reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">6</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Duet bait</div></div>
-    <div class="cal-day has-post"><div class="cal-date">7</div><div class="cal-post"><span class="cal-plat-dot" style="background:#FF6200"></span>Weekly drop — all platforms</div></div>
-    <div class="cal-day has-post"><div class="cal-date">8</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Music reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">9</div><div class="cal-post"><span class="cal-plat-dot" style="background:#1DA1F2"></span>Era poll tweet</div></div>
-    <div class="cal-day has-post"><div class="cal-date">10</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Song TikTok</div></div>
-    <div class="cal-day has-post"><div class="cal-date">11</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Throwback reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">12</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Good taste TikTok</div></div>
-    <div class="cal-day has-post"><div class="cal-date">13</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Playlist story</div></div>
-    <div class="cal-day has-post"><div class="cal-date">14</div><div class="cal-post"><span class="cal-plat-dot" style="background:#FF6200"></span>Product drop — all</div></div>
-    <div class="cal-day has-post"><div class="cal-date">15</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>UGC repost</div></div>
-    <div class="cal-day has-post"><div class="cal-date">16</div><div class="cal-post"><span class="cal-plat-dot" style="background:#1DA1F2"></span>City shoutout</div></div>
-    <div class="cal-day has-post"><div class="cal-date">17</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Dancer collab</div></div>
-    <div class="cal-day has-post"><div class="cal-date">18</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Dance reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">19</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Reply TikTok</div></div>
-    <div class="cal-day has-post"><div class="cal-date">20</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Fan feature story</div></div>
-    <div class="cal-day has-post"><div class="cal-date">21</div><div class="cal-post"><span class="cal-plat-dot" style="background:#FF6200"></span>Community drop</div></div>
-    <div class="cal-day has-post"><div class="cal-date">22</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>DR culture reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">23</div><div class="cal-post"><span class="cal-plat-dot" style="background:#1877F2"></span>History post</div></div>
-    <div class="cal-day has-post"><div class="cal-date">24</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Evolution carousel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">25</div><div class="cal-post"><span class="cal-plat-dot" style="background:#E1306C"></span>Summer merch reel</div></div>
-    <div class="cal-day has-post"><div class="cal-date">26</div><div class="cal-post"><span class="cal-plat-dot" style="background:#FF6200"></span>FLASH SALE LIVE 🔥</div></div>
-    <div class="cal-day has-post"><div class="cal-date">27</div><div class="cal-post"><span class="cal-plat-dot" style="background:#888"></span>Last call TikTok</div></div>
-    <div class="cal-day has-post"><div class="cal-date">28</div><div class="cal-post"><span class="cal-plat-dot" style="background:#FF0000"></span>YouTube Short</div></div>
-    <div class="cal-day has-post"><div class="cal-date">29</div><div class="cal-post"><span class="cal-plat-dot" style="background:#1877F2"></span>Community thank you</div></div>
-    <div class="cal-day has-post"><div class="cal-date">30</div><div class="cal-post"><span class="cal-plat-dot" style="background:#FF6200"></span>Month recap</div></div>
-    <div class="cal-day empty"></div>
-  </div>
-</div>
-
 <div class="section" id="strategy">
-  <div class="section-header">
-    <div class="section-title">Brand Strategy</div>
-    <a href="https://github.com/cryptofedge/losiconosdelabachata-marketing/blob/main/strategy/brand-strategy.md" target="_blank" class="section-link">Full doc on GitHub ↗</a>
-  </div>
+  <div class="section-header"><div class="section-title">Brand Strategy</div></div>
   <div class="strategy-grid">
     <div class="strategy-card">
       <div class="strategy-label">Brand voice</div>
       <div class="strategy-title">Direct. Proud. Cultural.</div>
-      <div class="strategy-body">We speak to the audience like they're already in on it — because they are. Spanish and English, sometimes in the same sentence. Emotion over hype. No corporate tone. Ever.</div>
+      <div class="strategy-body">We speak to the audience like they are already in on it - because they are. Spanish and English, sometimes in the same sentence. Emotion over hype. No corporate tone. Ever.</div>
     </div>
     <div class="strategy-card">
       <div class="strategy-label">Target audience</div>
       <div class="strategy-title">The Diaspora</div>
-      <div class="strategy-body">Latino/Latina, 22–45, US-based. Grew up with Aventura. Knows every word to Obsesión. Buys merch to rep the culture. NYC, Miami, Boston, Chicago, LA.</div>
+      <div class="strategy-body">Latino/Latina, 22-45, US-based. Grew up with Aventura. Knows every word to Obsesion. Buys merch to rep the culture. NYC, Miami, Boston, Chicago, LA.</div>
     </div>
     <div class="strategy-card">
       <div class="strategy-label">Content pillars</div>
       <div class="strategy-title">Four pillars</div>
-      <div class="strategy-body">1. The Culture — history, throwbacks, DR roots<br>2. The Merch — drops, styling, reveals<br>3. The Community — UGC, fan features<br>4. The Music — releases, anniversaries, playlists</div>
+      <div class="strategy-body">1. The Culture - history, throwbacks, DR roots<br>2. The Merch - drops, styling, reveals<br>3. The Community - UGC, fan features<br>4. The Music - releases, anniversaries, playlists</div>
     </div>
     <div class="strategy-card">
       <div class="strategy-label">Core hashtags</div>
       <div class="strategy-title">Hashtag banks</div>
       <div class="hashtag-cloud">
-        <span class="hashtag">#LosIconosDeLaBachata</span>
-        <span class="hashtag">#Bachata</span>
-        <span class="hashtag">#Aventura</span>
-        <span class="hashtag">#BachataLife</span>
-        <span class="hashtag">#BachataMerch</span>
-        <span class="hashtag">#OrgulloLatino</span>
-        <span class="hashtag">#DiasporaLatina</span>
-        <span class="hashtag">#SomosLatinos</span>
-        <span class="hashtag">#RepTuCultura</span>
+        <span class="hashtag">#LosIconosDeLaBachata</span><span class="hashtag">#Bachata</span><span class="hashtag">#Aventura</span><span class="hashtag">#BachataLife</span><span class="hashtag">#BachataMerch</span><span class="hashtag">#OrgulloLatino</span><span class="hashtag">#DiasporaLatina</span><span class="hashtag">#SomosLatinos</span><span class="hashtag">#RepTuCultura</span>
       </div>
     </div>
   </div>
 </div>
-
 <div class="section" id="analytics">
-  <div class="section-header">
-    <div class="section-title">KPI Targets — June 2026</div>
-  </div>
+  <div class="section-header"><div class="section-title">KPI Targets - June 2026</div></div>
   <div class="kpi-grid">
     <div class="kpi-box"><div class="kpi-label">Instagram followers</div><div class="kpi-val">+500</div><div class="kpi-target">Month 1 target</div></div>
     <div class="kpi-box"><div class="kpi-label">TikTok views</div><div class="kpi-val">50K</div><div class="kpi-target">Total month target</div></div>
-    <div class="kpi-box"><div class="kpi-label">Engagement rate</div><div class="kpi-val">3–5%</div><div class="kpi-target">Instagram target</div></div>
+    <div class="kpi-box"><div class="kpi-label">Engagement rate</div><div class="kpi-val">3-5%</div><div class="kpi-target">Instagram target</div></div>
     <div class="kpi-box"><div class="kpi-label">Link conversions</div><div class="kpi-val">5%</div><div class="kpi-target">Of link clicks</div></div>
   </div>
 </div>
-
 <footer>
-  <div class="footer-logo">Los Iconos × FEDGE 2.O</div>
+  <div class="footer-logo">Los Iconos � Marino 007</div>
   <div>losiconosdelabachata.com</div>
-  <div>Built by <a href="https://github.com/cryptofedge" style="color:var(--orange)">@cryptofedge</a></div>
+  <div>Managed by Marino 007</div>
 </footer>
-
 </body>
 </html>
