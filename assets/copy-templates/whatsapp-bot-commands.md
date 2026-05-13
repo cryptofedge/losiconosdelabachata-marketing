@@ -1,4 +1,5 @@
 # WhatsApp Bot Commands - Los Iconos
+Agent: Marino 007
 
 ## !iconos [topic]
 Generates posts for Instagram, TikTok, Facebook, Twitter/X
@@ -16,4 +17,4 @@ Example: !iconos-urgent last 12 hours summer drop
 Generates a full content brief for one post
 Example: !iconos-brief fan feature this week
 
-All commands: Admin only. Powered by claude-haiku-4-5 for fast WhatsApp response times.
+All commands: Admin only. Built for Marino Santos by Marino 007.
